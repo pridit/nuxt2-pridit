@@ -1,0 +1,10 @@
+{
+  "root": "dist",
+  "canonical_host": "www.pridit.co.uk",
+  "clean_urls": true,
+  "https_only": true,
+  "error_page": "404.html",
+  "routes": {
+    "/*.html": "index.html"
+  }
+}
