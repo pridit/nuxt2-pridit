@@ -62,6 +62,20 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
   ],
 
+  sitemap: {
+    hostname: process.env.BASE_URL || 'http://localhost:3000',
+    gzip: true,
+    routes: [
+      '/'
+    ],
+  },
+
+  robots: {
+    UserAgent: '*',
+    Disallow: '',
+    Sitemap: process.env.BASE_URL + '/sitemap.xml'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
@@ -69,12 +83,4 @@ export default defineNuxtConfig({
   generate: {
     fallback: '404.html'
   },
-
-  sitemap: {
-    hostname: process.env.BASE_URL || 'http://localhost:3000',
-    gzip: true,
-    routes: [
-      '/'
-    ],
-  }
 })
