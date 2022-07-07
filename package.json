@@ -6,8 +6,7 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "nuxi preview",
-    "generate": "nuxt generate",
-    "heroku-postbuild": "yarn generate"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/robots": "^2.5.0",
