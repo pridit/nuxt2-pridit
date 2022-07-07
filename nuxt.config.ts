@@ -31,6 +31,7 @@ export default defineNuxtConfig({
       { hid: 'og:description', property: 'og:description', content: 'Full stack web developer in Greater London, England' }
     ],
     link: [
+      { rel: 'canonical', href: process.env.BASE_URL },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
