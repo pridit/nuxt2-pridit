@@ -1,16 +1,20 @@
 <template>
-  <div class="p-6 flex items-center justify-center min-h-screen lg:p-0">
+  <div class="flex items-center justify-center min-h-screen p-6 lg:p-0">
     <div class="md:flex">
       <img
-        class="h-24 w-24 rounded-full border border-gray-200 md:h-32 md:w-32"
+        class="w-24 h-24 border border-gray-200 rounded-full dark:border-gray-900 md:h-32 md:w-32"
         src="~/assets/jordan-heale.jpg"
         v-bind:alt="this.$root.context.app.head.title"
       />
 
       <div class="mt-6 md:ml-6 md:mt-0">
-        <h1 class="text-gray-800 text-2xl font-bold uppercase">
-          {{ this.$root.context.app.head.title }}
-        </h1>
+        <div class="flex">
+          <h1 class="flex-1 text-2xl font-bold text-gray-800 uppercase dark:text-gray-300">
+            {{ this.$root.context.app.head.title }}
+          </h1>
+
+          <DarkModeToggle />
+        </div>
 
         <div class="max-w-2xl md:text-justify">
           <Paragraph class="font-semibold">

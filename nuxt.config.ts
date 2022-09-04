@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       lang: 'en'
     },
     bodyAttrs: {
-      class: 'font-sans leading-normal text-gray-700 bg-gray-100 print:bg-white min-h-screen'
+      class: 'min-h-screen font-sans leading-normal text-gray-700 bg-gray-100 dark:bg-night dark:text-gray-300 print:bg-white'
     },
     meta: [
       { charset: 'utf-8' },
@@ -37,12 +37,10 @@ export default defineNuxtConfig({
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -59,9 +57,14 @@ export default defineNuxtConfig({
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
   ],
+
+  colorMode: {
+    classSuffix: '',
+  },
 
   sitemap: {
     hostname: process.env.BASE_URL || 'http://localhost:3000',
@@ -78,8 +81,7 @@ export default defineNuxtConfig({
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
+  build: {},
 
   generate: {
     fallback: '404.html'
