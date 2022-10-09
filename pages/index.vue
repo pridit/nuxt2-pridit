@@ -31,8 +31,8 @@
             In a volunteer capacity I have contributed towards the encyclopedia
             <a href="https://pcgamingwiki.com" target="_blank" rel="nofollow">PCGamingWiki</a>&mdash;there I spent 3
             years as an administrator, and in that time built
-            <a href="https://pcgw-assignments.herokuapp.com" target="_blank">PCGW Assignments</a> to manage and allocate
-            press review codes for upcoming title releases.
+            <a href="https://github.com/pridit/pcgw-assignments" target="_blank">PCGW Assignments</a> to manage and
+            allocate press review codes for upcoming title releases.
           </Paragraph>
 
           <Paragraph>
