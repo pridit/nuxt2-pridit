@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  web:
+    image: node:16
+    command: yarn dev
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
+    environment:
+      - HOST=0.0.0.0
